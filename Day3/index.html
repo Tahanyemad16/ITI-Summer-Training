@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo"> <button class="menu-toggle" id="menu-toggle">☰</button>Edition</div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="actions/contactUs.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <input type="text" placeholder="Search..." class="search" />
+                <div class="cart">🛒 <span>0</span></div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="overlay">
+            <div class="txt">
+                <h1>You're only one book<br>away from a good mood</h1>
+                <p><strong>Edition</strong> is a Webflow Ecommerce Template that will help you to have your store online
+                    in literally minutes</p>
+                <a href="actions/collection.html" class="btn">View All Collections</a>
+                <p class="price-note">eBooks starting @ as low as $0.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container newsletter-container">
+            <div class="newsletter-text">
+                <h2>Join our community of<br> eBook lovers!</h2>
+                <p>
+                    Phasellus ullamcorper, magna a accumsan mollis, turpis lacus aliquet quam,
+                    condimentum gravida ipsum leo non augue. Nam luctus cursus tortor ut interdum.
+                </p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" />
+                    <button type="submit">Submit</button>
+                </div>
+                <small>
+                    By signing up, you agree to receive information about our latest updates,
+                    discounts, and promotional offers.
+                </small>
+            </div>
+
+            <div class="newsletter-image">
+                <img src="assets/img5.webp" alt="Smiling person" />
+
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container testimonial-container">
+            <div class="testimonial-text">
+                <h2>Where the bookstore<br> comes to you</h2>
+                <p>
+                    Phasellus ullamcorper, magna a accumsan mollis, turpis lacus aliquet quam,
+                    condimentum gravida ipsum leo non augue. Nam luctus cursus tortor ut interdum.
+                </p>
+            </div>
+            <div class="testimonial-card">
+                <div class="quote-icon">
+                    <img src="assets/img2.jpg" alt="Quote Icon">
+                </div>
+                <p class="testimonial-quote">
+                    Phasellus ullamcorper, magna a accumsan mollis, turpis lacus aliquet quam,
+                    condimentum gravida ipsum leo non augue. Nam luctus cursus tortor ut interdum.
+                </p>
+                <p class="testimonial-source">– Business Insider</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <h4>Edition</h4>
+                <p>Read. Share. Connect.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Collections</a>
+                <a href="#">Contact</a>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Edition. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById("menu-toggle");
+        const nav = document.querySelector(".nav");
+
+        toggleBtn.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+
+</html>
